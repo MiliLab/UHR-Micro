@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Model checkpoints & datasets (do NOT commit)
+models/*
+!models/.gitkeep
+
+# Run outputs & logs
+runs/
+*.log
+*.jsonl
+
+# OS / editor
+.DS_Store
+*.swp

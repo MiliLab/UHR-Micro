@@ -1,0 +1,13 @@
+# 环境 A：Qwen3-VL（direct 推理 + MAP 方法 Qwen 骨干）
+# torch 需 cu128 编译（torch==2.10.0+cu128），驱动需支持 CUDA 12.8+
+torch==2.10.0+cu128
+torchvision==0.25.0
+transformers==5.5.3
+vllm==0.19.1
+numpy==2.2.6
+pillow==11.3.0
+accelerate==1.13.0
+qwen-vl-utils==0.0.14
+tokenizers==0.22.2
+sentencepiece==0.2.1
+einops==0.8.2

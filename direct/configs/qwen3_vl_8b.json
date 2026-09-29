@@ -1,0 +1,33 @@
+{
+  "schema_version": "uhr-bench-v4-qwen3-vl-8b-adapter-1",
+  "model_registry_id": "qwen3_vl_8b",
+  "resolved_model_id": "local:Qwen3-VL-8B-Instruct",
+  "backend": "vllm",
+  "dtype": "bfloat16",
+  "seed": 42,
+  "tensor_parallel_size": 1,
+  "gpu_memory_utilization": 0.8,
+  "max_model_len": 32768,
+  "image_preprocess": {
+    "policy": "checkpoint_preprocessor_config",
+    "patch_size": 16,
+    "merge_size": 2,
+    "alignment_factor": 32,
+    "min_pixels": 65536,
+    "max_pixels": 16777216,
+    "max_visual_tokens": 16384,
+    "preserve_aspect_ratio": true
+  },
+  "generation": {
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_new_tokens": 8192
+  },
+  "requested_coordinate_protocol": "base1000",
+  "raw_response_postprocessing": "none",
+  "final_response_postprocessing": "outer_whitespace_strip_only",
+  "trust_remote_code": false,
+  "local_files_only": true
+}

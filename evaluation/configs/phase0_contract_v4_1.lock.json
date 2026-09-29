@@ -1,0 +1,8 @@
+{
+  "benchmark_manifest_file_sha256": "e3adab87459aee65c24212f43a41c92f3c0dee668989ccf76fc39a957c81cd9d",
+  "benchmark_manifest_sha256": "9006ce485f28aac27e31f5d0694aaa2521e87c67d15206504b38ac8b04904ed5",
+  "changed_task": "Relationship/RelationshipRecognition",
+  "dataset_version": "4.1",
+  "phase0_contract_sha256": "99c6e7790d66b9713d70754c3484d000b46a168f00e45b60beab400414c97f3e",
+  "schema_version": "uhr-bench-v4.1-phase0-contract-lock-1"
+}

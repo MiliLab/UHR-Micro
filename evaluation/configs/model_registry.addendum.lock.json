@@ -1,0 +1,85 @@
+{
+  "base_model_registry_lock_sha256": "6cc76b7340ced399b1d718f07ebc660db244dda055acf736febd46d63376e575",
+  "model_registry_addendum_lock_sha256": "e202a9fd7c70757d1b6053a8ce1297cad79561401f4fcee26399ef54db97969e",
+  "models": [
+    {
+      "artifact_root_rel_workspace": "models/Qwen3-VL-32B-Instruct",
+      "coordinate_protocol": "base1000",
+      "display_name": "Qwen3-VL-32B-Instruct",
+      "full_artifact_manifest_sha256": "5478f8d7851209e46b9334012f1cde244516fd093551e87eae251cc5229d6896",
+      "identity_files": [
+        {
+          "relpath": "config.json",
+          "sha256": "d2dd0c60d01b9e195d9447c52da61c7302d28828524914c044d9c6e1b81d0427",
+          "size_bytes": 1474
+        },
+        {
+          "relpath": "model.safetensors.index.json",
+          "sha256": "06c952c569285870b811989b794b9766493e280fb77fbcb957fc4e5fcf25403a",
+          "size_bytes": 97831
+        },
+        {
+          "relpath": "tokenizer_config.json",
+          "sha256": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399",
+          "size_bytes": 10868
+        }
+      ],
+      "identity_scope": "metadata_and_full_weight_manifest",
+      "kind": "local_direct",
+      "model_registry_id": "qwen3_vl_32b",
+      "run_eligibility": "validation_pilot_after_adapter",
+      "upstream_model_id": "Qwen/Qwen3-VL-32B-Instruct",
+      "upstream_revision": "0cfaf48183f594c314753d30a4c4974bc75f3ccb"
+    },
+    {
+      "artifact_root_rel_workspace": "models/Qwen2.5-VL-7B-Instruct",
+      "coordinate_protocol": "absolute_source",
+      "display_name": "HiDe (Qwen2.5-VL-7B)",
+      "identity_files": [
+        {
+          "relpath": "config.json",
+          "sha256": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+          "size_bytes": 1374
+        },
+        {
+          "relpath": "generation_config.json",
+          "sha256": "0a3aea82869fe29f20dc95ccf3e2bcff380eca1f5ad6447a4a4b37110b08e43e",
+          "size_bytes": 216
+        }
+      ],
+      "identity_scope": "metadata_only",
+      "kind": "local_direct",
+      "model_registry_id": "hide_qwen25vl7b"
+    },
+    {
+      "artifact_root_rel_workspace": "models/Qwen2.5-VL-3B-Instruct",
+      "coordinate_protocol": "absolute_source",
+      "display_name": "ZoomEye (Qwen2.5-VL-3B)",
+      "identity_files": [
+        {
+          "relpath": "config.json",
+          "sha256": "7ed3eed5be6924cc800e8a5e53fc405c1aab1aaf36bad65c33403b36c56827f5",
+          "size_bytes": 1373
+        },
+        {
+          "relpath": "generation_config.json",
+          "sha256": "533f191cc257b7de37a4fccd0a7a1706d75e1aa660f93efaa54e5a2a9f9aace9",
+          "size_bytes": 216
+        }
+      ],
+      "identity_scope": "metadata_only",
+      "kind": "local_direct",
+      "model_registry_id": "zoomeye_qwen25vl3b"
+    },
+    {
+      "artifact_root_rel_workspace": "models/Qwen3-VL-main/Qwen3-VL-8B-Instruct",
+      "coordinate_protocol": "absolute_source",
+      "display_name": "ZoomSearch (Qwen3-VL-8B)",
+      "identity_files": [],
+      "identity_scope": "metadata_only",
+      "kind": "local_direct",
+      "model_registry_id": "zoomsearch_qwen3_vl_8b"
+    }
+  ],
+  "schema_version": "uhr-bench-v4-model-registry-addendum-1"
+}

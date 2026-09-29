@@ -1,0 +1,52 @@
+{
+  "schema_version": "uhr-bench-v4-metric-spec-rc1",
+  "status": "frozen_dual_multi_detection_metrics",
+  "primary_metric_generation": "v2_only",
+  "v1_metrics_allowed_in_formal_reports": false,
+  "fixed_denominator": true,
+  "single_grounding": {
+    "metric_id": "box_score_s_v2_polygon_first_final",
+    "prediction_selection": "first_box_from_unique_explicit_final",
+    "additional_boxes": "score_first_and_record_multi_prediction_noncompliance",
+    "obb_policy": "preserve_8_point_polygon_geometry",
+    "mixed_4_and_8_point_policy": "score_as_convex_polygons_and_record_shape_mismatch"
+  },
+  "multi_detection": {
+    "metric_id_template": "hungarian_soft_f1_box_score_s_v2_tp_at_{gate}",
+    "assignment": "maximum_valid_cardinality_then_maximum_total_box_score_s_v2",
+    "quality": "box_score_s_v2_polygon",
+    "soft_f1": "2_times_sum_matched_quality_divided_by_n_gt_plus_n_pred",
+    "formal_gate": "dual_report_iou_0.3_and_score_s_0.3",
+    "formal_metrics": ["TP@IoU0.3", "TP@Score0.3"],
+    "unique_primary_metric": null,
+    "unique_primary_selection": "deferred_until_more_validation_results_without_rerunning_inference",
+    "pending_decision": false,
+    "candidate_gates": {
+      "iou_0.3": "valid iff polygon IoU >= 0.3; matched quality is Box Score-S v2",
+      "score_s_0.3": "valid iff Box Score-S v2 >= 0.3; may admit zero-IoU nearby boxes"
+    }
+  },
+  "segmentation": {
+    "primary_metric_id": "mask_score_s_v2_fixed_denominator",
+    "auxiliary_metric_id": "mask_iou_fixed_denominator",
+    "bbox_selection": "first_box_from_unique_explicit_final",
+    "postprocessor": "one_shared_frozen_official_sam2_contract",
+    "missing_bbox_or_sam2_failure": 0.0
+  },
+  "count": {
+    "primary_metric_id": "relative_count_score_v2",
+    "formula": "gt_zero_exact_else_max_0_1_minus_absolute_error_divided_by_gt",
+    "auxiliary": ["exact_match", "mae", "relative_error"]
+  },
+  "choice": {
+    "primary_metric_id": "choice_accuracy_v2_strict_final",
+    "formula": "exact_A_B_C_D_match",
+    "invalid": 0.0
+  },
+  "aggregation": {
+    "task": "sample_mean_over_fixed_manifest_denominator",
+    "family": "equal_weight_macro_over_declared_tasks_in_family",
+    "overall": "equal_weight_macro_over_16_tasks",
+    "rounding": "display_only"
+  }
+}

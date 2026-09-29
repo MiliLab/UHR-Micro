@@ -1,0 +1,14 @@
+{
+  "base_model_registry_lock_sha256": "6cc76b7340ced399b1d718f07ebc660db244dda055acf736febd46d63376e575",
+  "model_protocol_overrides_lock_sha256": "b48e80a84919a79d3e561f50d824c8a9584f8b0af658cf4f7fc1d1379c9ad7ab",
+  "overrides": [
+    {
+      "coordinate_protocol": "absolute_source",
+      "evidence_lock_relpath": "configs/deepeyes_protocol.lock.json",
+      "evidence_lock_sha256": "6ec32655d7e749879468be7c3f567eb9378a6ddbf7d86cf5599df3be431ac076",
+      "model_registry_id": "deepeyes_7b",
+      "scope": "DeepEyes v4 runs prepared after source-coordinate pilot repair"
+    }
+  ],
+  "schema_version": "uhr-bench-v4-model-protocol-overrides-1"
+}

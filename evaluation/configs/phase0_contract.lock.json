@@ -1,0 +1,18 @@
+{
+  "benchmark_contract_sha256": "bd3b5803da4120eb81b52e5acc5564d4cf25a8f9829a7b5a634188c65f929186",
+  "benchmark_manifest_file_sha256": "6d84cdebbe77a4d8ca3c071f2b3ed4429a84b8a5358e2ae25cfdfb4c5f461725",
+  "benchmark_manifest_sha256": "cb9cd79d7f800c7b0cc9317d21ed86f4a68b23f762cb0c542a3bb40a91671e5d",
+  "contract_tool_sha256": {
+    "tools/audit_phase0_contract.py": "1004c5e4434c7fb8c49df387864251bc1bbe9a222da03a23f460c6f7ff7d5ba7",
+    "tools/build_phase0_contract.py": "a6d1deae09c0ed12639e0b365c4e74ee9dfca8a6170158aaf9bcdc0aa097f8fb"
+  },
+  "phase0_contract_sha256": "0c17c727a0a127dea4c6a1e372e7a65ca2db00ea417565cd0358293f98a1d3b3",
+  "schema_sha256": {
+    "schemas/metric_record.schema.json": "1bcd4ec4791d37a8a258f6f018d52f97c501fea10e86347fca25f003d8a4efd6",
+    "schemas/parsed_prediction.schema.json": "cd77ed26221da43905befdae843c9dc9fa9412396c18388ca7e1f1f920073710",
+    "schemas/prediction.schema.json": "20476f6c6630ae8edbef40034651362b18e25c7d558a4b4ae1e5288ae6acdd86",
+    "schemas/run.schema.json": "e5b381fd1de5cd1f8ca29c429fe438b74dc5a3bdca64fcff4a8879ff073a6d35",
+    "schemas/sam2_mask.schema.json": "e197b682d26dfaeab91bc01524f5643fb4481e3cedc6460ddbebd269db05122e"
+  },
+  "schema_version": "uhr-bench-v4-phase0-contract-lock-1"
+}

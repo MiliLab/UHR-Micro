@@ -1,0 +1,13 @@
+# 环境 B：InternVL3.5-8B（MAP 方法 InternVL 骨干，transformers 后端）
+# torch 需 cu130 编译（torch==2.11.0+cu130），驱动需支持 CUDA 13.0
+torch==2.11.0+cu130
+torchvision==0.26.0
+transformers==5.13.1
+numpy==2.2.6
+pillow==12.2.0
+accelerate==1.14.0
+timm==0.9.12
+einops==0.6.1
+decord==0.6.0
+tokenizers==0.22.2
+sentencepiece==0.1.99

@@ -1,0 +1,152 @@
+{
+  "registry_version": "uhr-bench-v4-model-registry-1",
+  "formal_model_count": 16,
+  "models": [
+    {
+      "model_registry_id": "qwen2_vl_7b",
+      "display_name": "Qwen2-VL-7B",
+      "kind": "local_direct",
+      "artifact_root_rel_workspace": "models/Qwen2-VL-7B-Instruct",
+      "identity_files": ["config.json", "model.safetensors.index.json", "tokenizer_config.json"],
+      "coordinate_protocol": "base1000",
+      "run_eligibility": "validation_pilot_after_adapter"
+    },
+    {
+      "model_registry_id": "qwen2_5_vl_7b",
+      "display_name": "Qwen2.5-VL-7B",
+      "kind": "local_direct",
+      "artifact_root_rel_workspace": "models/Qwen2.5-VL-7B-Instruct",
+      "identity_files": ["config.json", "model.safetensors.index.json", "tokenizer_config.json"],
+      "coordinate_protocol": "absolute_model_input",
+      "run_eligibility": "validation_pilot_after_adapter"
+    },
+    {
+      "model_registry_id": "qwen3_vl_8b",
+      "display_name": "Qwen3-VL-8B",
+      "kind": "local_direct",
+      "artifact_root_rel_workspace": "models/Qwen3-VL-main/Qwen3-VL-8B-Instruct",
+      "identity_files": ["config.json", "model.safetensors.index.json", "tokenizer_config.json"],
+      "coordinate_protocol": "base1000",
+      "run_eligibility": "phase1_reference_model_candidate"
+    },
+    {
+      "model_registry_id": "qwen3_vl_30b",
+      "display_name": "Qwen3-VL-30B",
+      "kind": "local_direct",
+      "artifact_root_rel_workspace": "models/Qwen3-VL-30B-A3B-Instruct",
+      "identity_files": ["config.json", "model.safetensors.index.json", "tokenizer_config.json"],
+      "coordinate_protocol": "base1000",
+      "run_eligibility": "validation_pilot_after_adapter"
+    },
+    {
+      "model_registry_id": "qwen3_vl_235b",
+      "display_name": "Qwen3-VL-235B",
+      "kind": "local_direct",
+      "artifact_root_rel_workspace": "models/Qwen3-VL-235B-A22B-Instruct",
+      "identity_files": ["config.json", "model.safetensors.index.json", "tokenizer_config.json"],
+      "coordinate_protocol": "base1000",
+      "run_eligibility": "validation_pilot_after_adapter"
+    },
+    {
+      "model_registry_id": "internvl3_5_8b",
+      "display_name": "InternVL3.5-8B",
+      "kind": "local_direct",
+      "artifact_root_rel_workspace": "models/InternVL3_5-8B",
+      "identity_files": ["config.json", "model.safetensors.index.json", "tokenizer_config.json"],
+      "coordinate_protocol": "base1000",
+      "run_eligibility": "validation_pilot_after_adapter"
+    },
+    {
+      "model_registry_id": "internvl3_5_38b",
+      "display_name": "InternVL3.5-38B",
+      "kind": "local_direct",
+      "artifact_root_rel_workspace": "models/InternVL3_5-38B",
+      "identity_files": ["config.json", "model.safetensors.index.json", "tokenizer_config.json"],
+      "coordinate_protocol": "base1000",
+      "run_eligibility": "validation_pilot_after_adapter"
+    },
+    {
+      "model_registry_id": "gpt_5_2",
+      "display_name": "GPT-5.2",
+      "kind": "closed_api_direct",
+      "requested_model_id": "gpt-5.2",
+      "coordinate_protocol": "explicit_prompt_frozen",
+      "run_eligibility": "blocked_until_endpoint_and_resolved_identity_are_frozen"
+    },
+    {
+      "model_registry_id": "gemini_2_5_pro",
+      "display_name": "Gemini-2.5-Pro",
+      "kind": "closed_api_direct",
+      "requested_model_id": "gemini-2.5-pro",
+      "coordinate_protocol": "explicit_prompt_frozen",
+      "run_eligibility": "blocked_until_endpoint_and_resolved_identity_are_frozen"
+    },
+    {
+      "model_registry_id": "claude_3_7_sonnet",
+      "display_name": "Claude 3.7 Sonnet",
+      "kind": "closed_api_direct",
+      "requested_model_id": null,
+      "coordinate_protocol": "explicit_prompt_frozen",
+      "run_eligibility": "blocked_exact_runner_and_model_id_missing_no_proxy_allowed"
+    },
+    {
+      "model_registry_id": "deepeyes_7b",
+      "display_name": "DeepEyes",
+      "kind": "local_tool_model",
+      "artifact_root_rel_workspace": "models/DeepEyes-main/DeepEyes-7B",
+      "identity_files": ["config.json", "model.safetensors.index.json", "tokenizer_config.json"],
+      "coordinate_protocol": "absolute_model_input",
+      "run_eligibility": "blocked_until_tool_and_final_prediction_are_separated"
+    },
+    {
+      "model_registry_id": "geochat_7b",
+      "display_name": "GeoChat",
+      "kind": "local_direct",
+      "artifact_root_rel_workspace": "models/geochat-7B",
+      "identity_files": ["config.json", "pytorch_model.bin.index.json", "tokenizer_config.json"],
+      "coordinate_protocol": "base100",
+      "run_eligibility": "validation_pilot_after_strict_native_parser"
+    },
+    {
+      "model_registry_id": "geollava_8k",
+      "display_name": "GeoLLaVA-8K",
+      "kind": "local_direct",
+      "artifact_root_rel_workspace": "models/GeoLLaVA-8K",
+      "identity_files": ["config.json", "model.safetensors.index.json", "tokenizer_config.json"],
+      "coordinate_protocol": "base1",
+      "run_eligibility": "validation_pilot_after_adapter"
+    },
+    {
+      "model_registry_id": "geoeyes_7b",
+      "display_name": "GeoEyes",
+      "kind": "local_tool_model",
+      "artifact_root_rel_workspace": "models/GeoEyes",
+      "identity_files": ["config.json", "model.safetensors.index.json", "tokenizer_config.json"],
+      "coordinate_protocol": "absolute_model_input",
+      "run_eligibility": "blocked_until_crop_transform_and_termination_contract_are_fixed"
+    },
+    {
+      "model_registry_id": "map_agent_internvl3_5_8b",
+      "display_name": "MAP-Agent (InternVL3.5-8B)",
+      "kind": "agent",
+      "artifact_root_rel_workspace": "models/InternVL3_5-8B",
+      "identity_files": ["config.json", "model.safetensors.index.json", "tokenizer_config.json"],
+      "coordinate_protocol": "pending_map_v4_contract",
+      "run_eligibility": "blocked_until_shared_map_v4_controller_is_frozen"
+    },
+    {
+      "model_registry_id": "map_agent_qwen3_vl_8b",
+      "display_name": "MAP-Agent (Qwen3-VL-8B)",
+      "kind": "agent",
+      "artifact_root_rel_workspace": "models/Qwen3-VL-main/Qwen3-VL-8B-Instruct",
+      "identity_files": ["config.json", "model.safetensors.index.json", "tokenizer_config.json"],
+      "coordinate_protocol": "pending_map_v4_contract",
+      "run_eligibility": "blocked_until_shared_map_v4_controller_is_frozen"
+    }
+  ],
+  "weight_identity_policy": {
+    "phase0": "hash config tokenizer and weight index metadata",
+    "before_each_formal_run": "create and hash a complete model artifact manifest including every weight shard",
+    "closed_api": "record requested and resolved model identity plus endpoint and request metadata"
+  }
+}

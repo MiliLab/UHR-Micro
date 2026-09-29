@@ -1,0 +1,7 @@
+# 环境 C：SAM2（ReferSegmentation / ComponentSegmentation 评测）
+# 另需克隆 facebookresearch/sam2 仓库并下载其 checkpoint
+torch==2.11.0+cu130
+torchvision==0.26.0
+numpy==2.2.6
+pillow==12.2.0
+pycocotools==2.0.11
