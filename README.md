@@ -33,6 +33,7 @@ Bo Du<sup>2,3†</sup>.
 
 ## 🔥 Update
 
+- **[2026.10]** 📦 Benchmark dataset released on Hugging Face: [nishuo1999/UHR-Micro](https://huggingface.co/datasets/nishuo1999/UHR-Micro)
 - **[2026.09]** 📄 Preprint under review. Source code released.
 
 ## 🌞 Abstract
@@ -62,6 +63,8 @@ UHR-Micro by 8.65 percentage points on average.
 task-relevant micro-evidence in UHR remote-sensing imagery. Each instruction is
 centered on an objectively verifiable target occupying less than 0.01% of the image
 area, spanning 16 tasks across four families.
+
+The full benchmark dataset (1,212 UHR images, 11,072 annotated instructions, 48.12GB) is publicly available on Hugging Face: [nishuo1999/UHR-Micro](https://huggingface.co/datasets/nishuo1999/UHR-Micro).
 
 <div align="center">
 <img src="figs/fig2.png" width="100%">
